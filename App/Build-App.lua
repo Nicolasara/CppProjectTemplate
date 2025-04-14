@@ -23,6 +23,11 @@ project "App"
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
    objdir ("../Binaries/Intermediates/" .. OutputDir .. "/%{prj.name}")
 
+-- Uncomment this if you want to use Protobuf
+--    filter "system:linux"
+--       links { "protobuf" }
+--       linkoptions { "-lprotobuf" }
+   
    filter "system:windows"
        systemversion "latest"
        defines { "WINDOWS" }
