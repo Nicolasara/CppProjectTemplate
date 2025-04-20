@@ -15,3 +15,10 @@ echo "" >> ../Makefile
 echo "test: Tests" >> ../Makefile
 echo -e "\t@echo \"==== Running Tests ====\"" >> ../Makefile
 echo -e "\t@./Binaries/linux-x86_64/\$(config)/Tests/Tests" >> ../Makefile
+
+# Uncomment the following lines if you want to generate protobuf files
+# echo "" >> ../Makefile
+# echo "" >> ../Makefile
+# echo "proto: " >> ../Makefile
+# echo -e "\t@echo \"==== Generating Protobuf ====\"" >> ../Makefile
+# echo -e "\t@protoc --proto_path=./App/Protos --cpp_out=./App/Source ./App/Protos/*.proto" >> ../Makefile
